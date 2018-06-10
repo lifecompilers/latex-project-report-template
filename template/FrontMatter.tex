@@ -1,0 +1,188 @@
+%This template is designed by Zilu Rane and whole team of compilers
+%So if your are using template so dont forget us
+\documentclass[a4paper,12pt]{report}
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ left=30mm,
+ top= 14mm,%%Actual value 15mm
+ right=20mm,
+ bottom=22mm,
+ }
+\usepackage{graphicx}
+\usepackage{titlesec,acronym,glossaries}
+\usepackage{titleps}
+\usepackage{indentfirst}
+\usepackage{algorithmic}
+\usepackage{tocloft}
+\usepackage{times}
+\usepackage{mathrsfs}
+%\usepackage{showframe}% check it to get margin lines
+\def\baselinestretch{1.5}
+\pagestyle{empty}
+\usepackage{pgf}
+\usepackage{pgfpages}
+\usepackage{fancybox}
+
+\begin{document}
+\begin{titlepage}
+
+
+\thisfancypage{%
+\setlength{\fboxsep}{12pt}\doublebox}{}
+
+\begin{center}
+\def\baselinestretch{1}
+\huge \bf{Machine Learning Approach for
+Sentimental Analysis of Twitter Feeds
+using Hadoop Framework}
+\end{center}
+\vfill
+\begin{center}
+{\bf Project}\\
+Submitted in partial fulfillment of the requirements
+of the degree of\\
+     \Huge \bf {Bachelor of Engineering}
+\end{center}
+\begin{center}
+\large by\\
+{\bf {Mr. Zilu Ramkrishna Rane (1C12/45)\\
+Mr. Mayur Ravindra Mane (1C11/28)\\
+Mr. Akshay Rajendra Kalambate (2C13/65)\\}}
+\end{center}
+\vfil
+\begin{center}
+\large 
+Under the guidance of\\
+{\bf {Prof. P. S. Gamare}}
+\end{center}
+\vfill
+\begin{figure}[h]
+\begin{center}
+\includegraphics [width=5cm] {images/clogo.jpg}\\
+\end{center}
+\end{figure}
+\begin{center}
+\def\baselinestretch{1}
+ \Large {\textsc  \bf {DEPARTMENT OF COMPUTER ENGINEERING}} \\
+\large 	RAJENDRA MANE COLLEGE OF ENGINEERING AND TECHNOLOGY
+Ambav(Devrukh), Tal - Sangameshwar, Dist - Ratnagiri - 415804 (MH) India\\ \bf{University of Mumbai\\2015-16} \\
+\end{center}
+\end{titlepage}
+\newpage
+\thisfancypage{%
+\setlength{\fboxsep}{12pt}\doublebox}{}
+\begin{center}
+\topskip0pt
+\vspace*{\fill}
+\Huge{\bf{\textit{Dedicated to\\the\\Dream of\\COMPILERS.IN\\}}}
+
+\vspace*{\fill}
+\end{center}
+\newpage
+\thisfancypage{%
+\setlength{\fboxsep}{12pt}\doublebox}{}
+\begin{center}
+\def \baselinestretch{1}
+Prabodhan Shikshan Prasarak Santha's,\\
+\large {RAJENDRA MANE COLLEGE OF ENGINEERING AND TECHNOLOGY
+Ambav(Devrukh), Tal - Sangameshwar, Dist - Ratnagiri - 415804 (MH) INDIA}
+\end{center}
+\vspace*{5mm}
+\begin{center}
+\def \baselinestretch{1}
+\huge \bf \underline{CERTIFICATE}
+\end{center}
+\vspace{3mm}
+\begin{center}
+This is to certify that the dissertation entitled,
+\end{center}
+\begin{center}
+\def\baselinestretch{1}
+\huge \bf{Machine Learning Approach for
+Sentimental Analysis of Twitter Feeds
+using Hadoop Framework}
+\end{center}
+\vspace{3mm}
+\begin{center}	
+	\def\baselinestretch{1.5}
+{\large
+Submitted by\\
+{\bf
+	\def\baselinestretch{1.5}{
+Mr. Zilu Ramkrishna Rane  (1C12/45)\\
+Mr. Mayur Ravindra Mane (1C11/28)\\
+Mr. Akshay Rajendra Kalambate (2C13/65)\\
+
+}}
+In partial fulfillment of the requirements for the Final Year in\\
+\vspace{3mm}
+{\large
+\textbf{
+Bachelor of Computer Engineering of\\
+University of Mumbai}}\\
+\vspace{3mm}
+This work was carried out under the guidance of\\
+\large {\bf Prof. P. S. Gamare}}
+\end{center}
+\vspace{20mm}
+\begin{center}
+{\centering
+\begin{tabular}{cccc}
+Prof. P. S. Gamare\hspace{7mm}&\hspace{7mm}Prof. P. S. Gamare\hspace{7mm}&\hspace{10mm}Prof. L. S. Naik\hspace{7mm}&\hspace{7mm}Dr. M. M. Bhagwat\\
+Guide\hspace{10mm}&\hspace{10mm}Coordinator\hspace{10mm}&\hspace{10mm}H. O. D.\hspace{10mm}&\hspace{10mm} Principal
+\end{tabular}}
+\end{center}
+\newpage
+\thisfancypage{%
+\setlength{\fboxsep}{12pt}\doublebox}{}
+\begin{center}
+{\huge \bf \underline{APPROVAL SHEET}}
+\end{center}
+\vspace{10mm}
+\hspace{12mm}This project report entitled {\bf Machine Learning Approach for Sentimental Analysis
+of Twitter Feeds using Hadoop Framework} by {\bf Mr. Zilu Ramkrishna Rane, Mr. Mane Mayur Ravindra, Mr. Kalambate Akshay Rajendra} is approved for the degree of {\bf B. E. in Computer Engineering} for the academic year {\bf2015-16}.\\
+
+\begin{flushright}
+\vspace{10mm}
+\underline{\hspace{50mm}}\\
+{\bf {Examiner 1}\\
+\vspace{15mm}
+\underline{\hspace{50mm}}\\
+{\bf {Examiner 2}}}
+\end{flushright}
+\vfill
+\begin{flushleft}
+Date:\\
+Place: Ambav\\
+\end{flushleft}
+\newpage
+\thisfancypage{%
+\setlength{\fboxsep}{12pt}\doublebox}{}
+\begin{center}
+{\huge \bf \underline{DECLARATION}}
+\end{center}
+\vspace{10mm}
+\hspace{12mm}We declare that this written submission represents our ideas in our own words and where others ideas and words are been included, We have adequately cited and referenced the original sources. We also declare that we have adhered to all principles of academic honesty and integrity and have not misrepresented or fabricated or falsified any idea/data/fact/source in our submission. We understand that any violation of the above will cause for disciplinary action by the Institute and can also evoke penal action from the sources which have thus not been properly cited or from whom proper permission has not been taken when needed.\\
+\begin{flushright}
+\begin{tabular}{p{60mm}}
+\vspace{10mm}
+\underline{\hspace{60mm}}\\
+{\bf {Mr. Rane Zilu Ramkrishna}}\\
+\vspace{10mm}
+\underline{\hspace{60mm}}\\
+{\bf {Mr. Mane Mayur Ravindra}}\\
+\vspace{10mm}
+\underline{\hspace{60mm}}\\
+{\bf {Mr. Kalambate Akshay Rajendra}}
+\end{tabular}
+\end{flushright}
+\vfill
+\begin{flushleft}
+Date:\\
+Place: Ambav\\
+\end{flushleft}
+
+\end{document}
+%This template is designed by Zilu Rane and whole team of compilers
+%So if your are using template so dont forget us

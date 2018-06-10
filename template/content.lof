@@ -1,0 +1,29 @@
+\select@language {english}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces SENTAL Architecture\relax }}{7}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces DFD Level 0\relax }}{8}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces DFD Level 1\relax }}{9}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces DFD Level 2 for tweets extraction\relax }}{9}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces DFD Level 2 for storing to HDFS\relax }}{10}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces DFD Level 2 for Preprocessing\relax }}{10}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces DFD Level 2 for Sentiment Analyzer\relax }}{11}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Use Case Diagram\relax }}{12}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Activity Diagram\relax }}{13}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Sequence Diagram\relax }}{14}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Installation of Cloudera\IeC {\textquoteright }s Distributed Hadoop\relax }}{16}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Generation of Twitter Stream API Keys\relax }}{16}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Flume Configuration\relax }}{17}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces SENTAL Homepage\relax }}{17}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces SENTAL output\relax }}{18}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Pre-processing Module\relax }}{19}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Hadoop Architecture\relax }}{26}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
